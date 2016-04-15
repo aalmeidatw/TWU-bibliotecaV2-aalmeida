@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.twu.types.movie.MovieTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-15T13:19:54" hostname="LAaalmeida" time="0.0">
+  <properties/>
+  <testcase name="shouldReturnItemType" classname="com.twu.types.movie.MovieTest" time="0.0"/>
+  <testcase name="shouldReturnDirectorName" classname="com.twu.types.movie.MovieTest" time="0.0"/>
+  <testcase name="shouldReturnRateValue" classname="com.twu.types.movie.MovieTest" time="0.0"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
