@@ -7,6 +7,8 @@ import com.twu.control.ManagementUser;
 import com.twu.menu.menu.MenuOptions;
 import com.twu.provider.LibraryItems;
 
+import java.util.Scanner;
+
 public class LibraryApp {
 
     public static void main(String[] args) {
@@ -23,7 +25,10 @@ public class LibraryApp {
 
             do {
                 messagePrinter.showMenuOptions();
+
+                messagePrinter.print("Option: " + "\n\n");
                 option = scannerInputUser.getUserInfoScanner();
+
                 menu.menuOption(option);
 
             } while (!option.equals("Q"));

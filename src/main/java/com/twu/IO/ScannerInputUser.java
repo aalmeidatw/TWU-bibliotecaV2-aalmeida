@@ -4,10 +4,10 @@ package com.twu.IO;
 import java.util.Scanner;
 
 public class ScannerInputUser {
-    Scanner scanner = new Scanner(System.in);
+    private Scanner scanner = new Scanner(System.in);
 
     public String getUserInfoScanner(){
-        return scanner.nextLine().toUpperCase();
+        return scanner.next().toUpperCase();
     }
 
     public String getNameItemScanner(){
@@ -17,6 +17,10 @@ public class ScannerInputUser {
     public int getInputIndex(){
         return scanner.nextInt();
 
+    }
+
+    public String getOption(){
+        return scanner.nextLine().toUpperCase();
     }
 
     public String getInputLoginUser(){

@@ -13,37 +13,30 @@ public class MenuOptions {
     private ScannerInputUser scannerInputUser;
     private MessagePrinter messagePrinter;
     private LoginMenu loginMenu;
+    private Map<String, Menu> map;
 
     public MenuOptions(Library library, ScannerInputUser scannerInputUser, MessagePrinter messagePrinter) {
         this.library = library;
         this.scannerInputUser = scannerInputUser;
         this.messagePrinter = messagePrinter;
         this.loginMenu = new LoginMenu(library, messagePrinter, scannerInputUser);
+        createMenuOptions();
     }
 
     public void menuOption(String option) {
 
-        Map<String, Menu> map = new HashMap<>();
+        if(!option.equals("Q")) {
+            map.get(option).execute();
+        }
+    }
+
+    private void createMenuOptions(){
+        this.map = new HashMap<>();
         map.put("1", new BookListMenu(library, messagePrinter));
         map.put("2", new MovieListMenu(library, messagePrinter));
         map.put("3", new LendItemMenu(library, messagePrinter, scannerInputUser));
         map.put("4", new ReturnItemMenu(library, messagePrinter, scannerInputUser));
         map.put("5", new UserInfoMenu(library, messagePrinter));
-        map.put("Q", new MovieListMenu(library, messagePrinter));
-
-        map.get(option).execute();
-
-
-        switch (option) {
-
-            case "Q":
-                messagePrinter.print("Exit of System");
-                break;
-
-            default:
-                messagePrinter.print("Select a valid option!");
-                break;
-        }
     }
 
 

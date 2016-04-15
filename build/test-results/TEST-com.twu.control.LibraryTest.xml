@@ -1,17 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.twu.control.LibraryTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2016-04-15T14:04:01" hostname="LAaalmeida" time="0.179">
+<testsuite name="com.twu.control.LibraryTest" tests="12" skipped="0" failures="0" errors="0" timestamp="2016-04-15T18:19:09" hostname="LAaalmeida" time="0.185">
   <properties/>
-  <testcase name="shouldReturnTrueWhenItemTypeIsBook" classname="com.twu.control.LibraryTest" time="0.15"/>
+  <testcase name="shouldReturnTrueWhenItemTypeIsBook" classname="com.twu.control.LibraryTest" time="0.159"/>
   <testcase name="shouldReturnItemWhenPassedItemName" classname="com.twu.control.LibraryTest" time="0.006"/>
   <testcase name="shouldReturnItemListOfReturn" classname="com.twu.control.LibraryTest" time="0.002"/>
   <testcase name="shouldReturnLibraryBookList" classname="com.twu.control.LibraryTest" time="0.002"/>
-  <testcase name="shouldReturnTrueWhenIsUserAuthenticated" classname="com.twu.control.LibraryTest" time="0.005"/>
+  <testcase name="shouldReturnTrueWhenIsUserAuthenticated" classname="com.twu.control.LibraryTest" time="0.006"/>
   <testcase name="shouldReturnNullWhenBookNameIsNotFound" classname="com.twu.control.LibraryTest" time="0.001"/>
-  <testcase name="shouldReturnFalseWhenItemTypeIsNotMovie" classname="com.twu.control.LibraryTest" time="0.002"/>
+  <testcase name="shouldReturnFalseWhenItemTypeIsNotMovie" classname="com.twu.control.LibraryTest" time="0.001"/>
   <testcase name="shouldReturnLibraryMovieList" classname="com.twu.control.LibraryTest" time="0.001"/>
-  <testcase name="shouldReturnFalseWhenIsUserIsNotAuthenticated" classname="com.twu.control.LibraryTest" time="0.001"/>
-  <testcase name="shouldReturnFalseWhenItemTypeIsNotBook" classname="com.twu.control.LibraryTest" time="0.002"/>
-  <testcase name="shouldReturnUserPassedUserName" classname="com.twu.control.LibraryTest" time="0.002"/>
+  <testcase name="shouldReturnFalseWhenIsUserIsNotAuthenticated" classname="com.twu.control.LibraryTest" time="0.002"/>
+  <testcase name="shouldReturnFalseWhenItemTypeIsNotBook" classname="com.twu.control.LibraryTest" time="0.0"/>
+  <testcase name="shouldReturnUserPassedUserName" classname="com.twu.control.LibraryTest" time="0.001"/>
   <testcase name="shouldReturnTrueWhenItemTypeIsMovie" classname="com.twu.control.LibraryTest" time="0.001"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
