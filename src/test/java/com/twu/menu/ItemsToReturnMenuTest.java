@@ -15,20 +15,20 @@ import static org.mockito.Mockito.verify;
 import static org.mockito.MockitoAnnotations.initMocks;
 
 public class ItemsToReturnMenuTest {
-    private Library library;
-    private static String MOVIE_NAME = "Mad Max";
     private ItemsToReturnMenu itemsToReturnMenu;
-
 
     @Mock
     MessagePrinter messagePrinterMock;
+
+    @Mock
     ManagementUser managementUserMock;
+
+    @Mock
     Library libraryMock;
 
     @Before
     public void setUp() throws Exception {
         initMocks(this);
-        this.libraryMock = new Library(new LibraryItems().createItemListLibrary(), managementUserMock);
         this.itemsToReturnMenu = new ItemsToReturnMenu(libraryMock, messagePrinterMock);
     }
 

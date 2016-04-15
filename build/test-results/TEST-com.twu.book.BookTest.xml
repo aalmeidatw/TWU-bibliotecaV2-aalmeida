@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.twu.book.BookTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-15T13:19:54" hostname="LAaalmeida" time="0.004">
+<testsuite name="com.twu.book.BookTest" tests="3" skipped="0" failures="0" errors="0" timestamp="2016-04-15T13:44:03" hostname="LAaalmeida" time="0.006">
   <properties/>
-  <testcase name="shouldReturnBookName" classname="com.twu.book.BookTest" time="0.003"/>
+  <testcase name="shouldReturnBookName" classname="com.twu.book.BookTest" time="0.004"/>
   <testcase name="shouldReturnAuthorName" classname="com.twu.book.BookTest" time="0.0"/>
   <testcase name="shouldReturnPublicationYear" classname="com.twu.book.BookTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
