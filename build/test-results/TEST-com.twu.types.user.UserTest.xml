@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.twu.types.user.UserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-04-15T13:44:03" hostname="LAaalmeida" time="0.0">
+<testsuite name="com.twu.types.user.UserTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-04-15T14:04:01" hostname="LAaalmeida" time="0.001">
   <properties/>
-  <testcase name="shouldReturnFalseWhenPasswordPassedIsNotEqual" classname="com.twu.types.user.UserTest" time="0.0"/>
+  <testcase name="shouldReturnFalseWhenPasswordPassedIsNotEqual" classname="com.twu.types.user.UserTest" time="0.001"/>
   <testcase name="shouldReturnTrueWhenPasswordPassedIsEqual" classname="com.twu.types.user.UserTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

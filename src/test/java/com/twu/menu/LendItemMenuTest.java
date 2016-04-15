@@ -6,7 +6,9 @@ import com.twu.control.Library;
 import com.twu.control.ManagementUser;
 import com.twu.provider.LibraryItems;
 import org.junit.Before;
+import org.junit.Test;
 import org.mockito.Mock;
+import org.mockito.Mockito;
 
 import java.util.Scanner;
 
@@ -18,42 +20,28 @@ public class LendItemMenuTest {
     private LendItemMenu lendItemMenu;
     private static String MESSAGE = "message";
 
+    @Mock
+    Library libraryMock;
+
+    @Mock
+    MessagePrinter messagePrintMock;
 
     @Mock
     ManagementUser managementUserMock;
-    MessagePrinter messagePrintMock;
-    Library libraryMock;
-    LendItemMenu lendItemMenuMock;
+
+    @Mock
     ScannerInputUser scannerMock;
 
 
-
-     @Before
+    @Before
     public void setUp() throws Exception {
         initMocks(this);
-
-        this.libraryMock = new Library(new LibraryItems().createItemListLibrary(), managementUserMock);
-        this.lendItemMenu = new LendItemMenu(libraryMock, messagePrintMock,scannerMock);
+        this.lendItemMenu = new LendItemMenu(libraryMock, messagePrintMock, scannerMock);
     }
 
-
-
+   @Test
     public void shouldTestIfPrintIsCalled() throws Exception {
-
-        Scanner scannerMock = mock(Scanner.class);
-        when(scannerMock.nextLine()).thenReturn("Mad Max");
-
-
-
         lendItemMenu.execute();
-
-
-//        String inputData = "Mad Max";
-//        System.setIn(new ByteArrayInputStream(inputData.getBytes()));
-//        System.setIn(System.in);
-
-
-        verify(messagePrintMock).print(MESSAGE);
-
-    }
+        verify(messagePrintMock).print(Mockito.anyString());
+     }
 }

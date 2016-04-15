@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.twu.menu.MenuLoginTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-04-15T13:44:03" hostname="LAaalmeida" time="0.001">
+<testsuite name="com.twu.menu.MenuLoginTest" tests="2" skipped="0" failures="0" errors="0" timestamp="2016-04-15T14:04:01" hostname="LAaalmeida" time="0.001">
   <properties/>
-  <testcase name="shouldReturnTrueWhenUserAsAuthenticated" classname="com.twu.menu.MenuLoginTest" time="0.001"/>
+  <testcase name="shouldReturnTrueWhenUserAsAuthenticated" classname="com.twu.menu.MenuLoginTest" time="0.0"/>
   <testcase name="shouldReturnTrueWhenUserAsNotAuthenticated" classname="com.twu.menu.MenuLoginTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>

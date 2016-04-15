@@ -38,8 +38,6 @@ public class BookListMenuTest {
     @Mock
     Library libraryMock;
 
-
-
     @Before
     public void setUp()  {
         initMocks(this);

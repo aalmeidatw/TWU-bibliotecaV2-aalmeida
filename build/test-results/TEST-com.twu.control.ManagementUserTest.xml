@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="com.twu.control.ManagementUserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-04-15T13:44:03" hostname="LAaalmeida" time="0.012">
+<testsuite name="com.twu.control.ManagementUserTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2016-04-15T14:04:01" hostname="LAaalmeida" time="0.01">
   <properties/>
   <testcase name="shouldReturnTrueWhenUserNameAndPasswordIsValid" classname="com.twu.control.ManagementUserTest" time="0.004"/>
-  <testcase name="shouldReturnFalseWhenUserNameAndPasswordIsNotValid" classname="com.twu.control.ManagementUserTest" time="0.001"/>
-  <testcase name="shouldReturnNotNullWhenUserNameAsFound" classname="com.twu.control.ManagementUserTest" time="0.001"/>
-  <testcase name="shouldReturnTrueWhenUserIsLoggIn" classname="com.twu.control.ManagementUserTest" time="0.005"/>
-  <testcase name="shouldReturnNullWhenUserNameAsNotFound" classname="com.twu.control.ManagementUserTest" time="0.001"/>
+  <testcase name="shouldReturnFalseWhenUserNameAndPasswordIsNotValid" classname="com.twu.control.ManagementUserTest" time="0.0"/>
+  <testcase name="shouldReturnNotNullWhenUserNameAsFound" classname="com.twu.control.ManagementUserTest" time="0.0"/>
+  <testcase name="shouldReturnTrueWhenUserIsLoggIn" classname="com.twu.control.ManagementUserTest" time="0.003"/>
+  <testcase name="shouldReturnNullWhenUserNameAsNotFound" classname="com.twu.control.ManagementUserTest" time="0.0"/>
   <testcase name="shouldReturnFalseWhenUserIsNotLoggIn" classname="com.twu.control.ManagementUserTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
