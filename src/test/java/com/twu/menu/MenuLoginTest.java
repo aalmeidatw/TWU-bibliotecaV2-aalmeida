@@ -9,31 +9,44 @@ import com.twu.menu.LoginMenu;
 import com.twu.provider.LibraryItems;
 import org.junit.Before;
 import org.junit.Test;
+import org.mockito.Mock;
+import org.mockito.Mockito;
 
 import static org.hamcrest.CoreMatchers.is;
 import static org.junit.Assert.assertThat;
+import static org.mockito.Mockito.verify;
+import static org.mockito.MockitoAnnotations.initMocks;
 
 public class MenuLoginTest {
     private LoginMenu loginMenu;
     private Library library;
-    private MessagePrinter messagePrinter;
-    private ScannerInputUser scannerInputUser;
     private static String USER_NAME = "name_user01";
     private static String PASSWORD = "1111";
     private static String ERROR_PASSWORD = "@qweAr";
 
+    @Mock
+    Library libraryMock;
+
+    @Mock
+    MessagePrinter messagePrinterMock;
+
+    @Mock
+    ScannerInputUser scannerInputUserMock;
+
+    @Mock
+    ManagementUser managementUserMock;
+
 
     @Before
     public void setUp() throws Exception {
-        this.library = new Library(new LibraryItems().createItemListLibrary(), new ManagementUser());
-        this.loginMenu = new LoginMenu(library, messagePrinter, scannerInputUser);
-
+        initMocks(this);
+        this.loginMenu = new LoginMenu(libraryMock, messagePrinterMock, scannerInputUserMock);
     }
 
     @Test
     public void shouldReturnTrueWhenUserAsAuthenticated() throws Exception {
         loginMenu.setUserStatus(USER_NAME, PASSWORD);
-        assertThat(loginMenu.isUserAuthenticated(), is(true));
+        verify(libraryMock).loginUser(Mockito.anyString(), Mockito.anyString());
     }
 
     @Test
