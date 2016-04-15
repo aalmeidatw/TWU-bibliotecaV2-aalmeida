@@ -18,7 +18,6 @@ import static org.mockito.MockitoAnnotations.initMocks;
 
 public class LendItemMenuTest {
     private LendItemMenu lendItemMenu;
-    private static String MESSAGE = "message";
 
     @Mock
     Library libraryMock;
@@ -39,9 +38,17 @@ public class LendItemMenuTest {
         this.lendItemMenu = new LendItemMenu(libraryMock, messagePrintMock, scannerMock);
     }
 
-   @Test
+    @Test
     public void shouldTestIfPrintIsCalled() throws Exception {
         lendItemMenu.execute();
         verify(messagePrintMock).print(Mockito.anyString());
-     }
+    }
+
+    @Test
+    public void shouldCallLendItemMethod() throws Exception {
+        lendItemMenu.execute();
+        verify(libraryMock).lendItem(Mockito.anyString());
+
+    }
+
 }
