@@ -9,6 +9,8 @@ public class ReturnItemMenu implements Menu {
     private MessagePrinter messagePrinter;
     private Library library;
     private ScannerInputUser scannerInputUser;
+    private final String LIST_ITEM_MESSAGE = "List Items To Return: " + "\n\n";
+    private final String TYPE_ITEM_MESSAGE = "Type ItemName To Return :" + "\n\n";
 
     public ReturnItemMenu(Library library, MessagePrinter messagePrinter, ScannerInputUser scannerInputUser) {
         this.messagePrinter = messagePrinter;
@@ -18,10 +20,10 @@ public class ReturnItemMenu implements Menu {
 
     @Override
     public void execute() {
-        messagePrinter.print("List Items To Return: " + "\n\n");
+        messagePrinter.print(LIST_ITEM_MESSAGE);
         messagePrinter.printerItemList(library.getAllItemsToReturn());
 
-        messagePrinter.print("Type ItemName To Return :" + "\n\n");
+        messagePrinter.print(TYPE_ITEM_MESSAGE);
         String itemName = scannerInputUser.getNameItemScanner();
 
         try {

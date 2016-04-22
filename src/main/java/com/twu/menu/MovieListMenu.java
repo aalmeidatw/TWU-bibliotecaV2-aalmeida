@@ -4,11 +4,10 @@ import com.twu.IO.MessagePrinter;
 import com.twu.control.Library;
 import com.twu.types.itemType.ItemType;
 
-
 public class MovieListMenu implements Menu {
     private MessagePrinter messagePrinter;
     private Library library;
-    private ItemType itemType;
+    private final String LIST_MOVIES_MESSAGE = "List of Available Movies! ";
 
     public MovieListMenu(Library library, MessagePrinter messagePrinter) {
         this.messagePrinter = messagePrinter;
@@ -17,7 +16,7 @@ public class MovieListMenu implements Menu {
 
     @Override
     public void execute() {
-        messagePrinter.print("List of Available Movies!  : ");
-        messagePrinter.printerItemList(library.returnItemList(itemType.MOVIE));
+        messagePrinter.print(LIST_MOVIES_MESSAGE);
+        messagePrinter.printerItemList(library.returnItemList(ItemType.MOVIE));
     }
 }

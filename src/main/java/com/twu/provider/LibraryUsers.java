@@ -15,7 +15,6 @@ public class LibraryUsers {
     private static String PASSWORD = "1111";
     private static String EMAIL = "user@provider.com";
     private static int PHONE = 12345678;
-
     private static String NAME_2 = "name_user2";
     private static String NAME_USER_2 = "name_user02";
     private static String PASSWORD_2 = "@asdf";

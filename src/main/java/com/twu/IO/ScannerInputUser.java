@@ -14,15 +14,6 @@ public class ScannerInputUser {
         return scanner.nextLine();
     }
 
-    public int getInputIndex(){
-        return scanner.nextInt();
-
-    }
-
-    public String getOption(){
-        return scanner.nextLine().toUpperCase();
-    }
-
     public String getInputLoginUser(){
         return scanner.next();
     }

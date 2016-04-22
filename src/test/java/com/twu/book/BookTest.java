@@ -13,9 +13,9 @@ import static org.hamcrest.core.Is.is;
 
 public class BookTest {
     private Book myBook;
-    private static String BOOK_NAME = "O Vento";
-    private static int PUBLICATION_YEAR =  1980;
-    private static String AUTHOR_NAME = "João Simplicio";
+    private final String BOOK_NAME = "O Vento";
+    private final int PUBLICATION_YEAR =  1980;
+    private final String AUTHOR_NAME = "João Simplicio";
 
 
     @Before

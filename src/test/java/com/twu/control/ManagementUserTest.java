@@ -16,9 +16,9 @@ public class ManagementUserTest {
     private ManagementUser managementUser;
     private LibraryUsers libraryUsers;
     private Library library;
-    private static String USER_NAME = "name_user01";
-    private static String USER_NAME_ERROR = "asd";
-    private static String PASSWORD = "1111";
+    private final String USER_NAME = "name_user01";
+    private final String USER_NAME_ERROR = "asd";
+    private final String PASSWORD = "1111";
 
 
     @Before

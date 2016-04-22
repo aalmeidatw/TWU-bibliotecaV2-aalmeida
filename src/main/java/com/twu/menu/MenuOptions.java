@@ -1,4 +1,4 @@
-package com.twu.menu.menu;
+package com.twu.menu;
 
 import com.twu.IO.MessagePrinter;
 import com.twu.IO.ScannerInputUser;
@@ -39,10 +39,8 @@ public class MenuOptions {
         map.put("5", new UserInfoMenu(library, messagePrinter));
     }
 
-
      public boolean userLogin(){
         loginMenu.execute();
-
         return loginMenu.isUserAuthenticated();
     }
 }

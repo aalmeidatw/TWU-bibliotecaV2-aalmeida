@@ -7,6 +7,7 @@ import com.twu.control.Library;
 public class UserInfoMenu implements Menu {
     private Library library;
     private MessagePrinter messagePrinter;
+    private final String USER_INFO_MESSAGE = "User Info: ";
 
     public UserInfoMenu(Library library, MessagePrinter messagePrinter){
         this.library = library;
@@ -15,7 +16,7 @@ public class UserInfoMenu implements Menu {
 
     @Override
     public void execute() {
-        messagePrinter.print("User Info: ");
+        messagePrinter.print(USER_INFO_MESSAGE);
         messagePrinter.print(library.getUserInfo());
     }
 }

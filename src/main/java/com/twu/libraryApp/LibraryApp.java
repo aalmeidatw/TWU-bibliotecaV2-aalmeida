@@ -4,14 +4,14 @@ import com.twu.IO.MessagePrinter;
 import com.twu.IO.ScannerInputUser;
 import com.twu.control.Library;
 import com.twu.control.ManagementUser;
-import com.twu.menu.menu.MenuOptions;
+import com.twu.menu.MenuOptions;
 import com.twu.provider.LibraryItems;
 
-import java.util.Scanner;
-
 public class LibraryApp {
+    private final String ERROR_LOGIN_MESSAGE = "LOGIN FAIL - SYSTEM IS OUT!";
 
     public static void main(String[] args) {
+
 
         MessagePrinter messagePrinter = new MessagePrinter();
         ScannerInputUser scannerInputUser = new ScannerInputUser();
@@ -33,7 +33,7 @@ public class LibraryApp {
 
             } while (!option.equals("Q"));
         } else {
-            messagePrinter.print("LOGIN FAIL - SYSTEM IS OUT!");
+            messagePrinter.print(ERROR_LOGIN_MESSAGE);
 
         }
     }

@@ -17,7 +17,7 @@ public class Library {
     private List<ItemLibrary> libraryItems = new ArrayList<>();
     private ManagementUser managementUser;
     private User userAuthenticated;
-    private static String ERROR_NAME_EXCEPTION = "ItemName Not Found - Try Again!";
+    private final String ERROR_NAME_EXCEPTION = "ItemName Not Found - Try Again!";
 
     public Library(List<ItemLibrary> libraryItems, ManagementUser managementUser) {
         this.libraryItems = libraryItems;
@@ -85,20 +85,20 @@ public class Library {
 
     public void lendItem(String name) throws Exception {
         ItemLibrary item = getLibraryItem(name);
-
-        if (item != null) {
-            item.modifyAvailableItemStatus(false);
-        } else
+        if (item == null){
             throw new NameErrorException(ERROR_NAME_EXCEPTION);
+        }
+
+        item.modifyAvailableItemStatus(false);
     }
 
     public void returnBorrowedItem(String name) throws Exception {
         ItemLibrary item = getLibraryItem(name);
-
-        if (item != null) {
-            item.modifyAvailableItemStatus(true);
-        } else
+        if (item == null) {
             throw new NameErrorException(ERROR_NAME_EXCEPTION);
+        }
+
+        item.modifyAvailableItemStatus(true);
     }
 
     protected ItemLibrary getLibraryItem(String name) throws Exception {
