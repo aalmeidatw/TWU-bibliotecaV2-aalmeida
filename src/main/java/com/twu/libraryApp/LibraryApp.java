@@ -8,7 +8,7 @@ import com.twu.menu.MenuOptions;
 import com.twu.provider.LibraryItems;
 
 public class LibraryApp {
-    private final String ERROR_LOGIN_MESSAGE = "LOGIN FAIL - SYSTEM IS OUT!";
+    private static final String ERROR_LOGIN_MESSAGE = "LOGIN FAIL - SYSTEM IS OUT!";
 
     public static void main(String[] args) {
 
